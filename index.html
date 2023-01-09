@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #mostrarMensaje{
+            display: none;
+        }
+    </style>
+    <title>Encriptador V0.1.0</title>
+</head>
+<body>
+    <header>
+        <nav class="menu-navegacion contenedor">
+            <div class="logo">
+                <img src="./imagenes/logo_alura.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor">
+            <div class="beneficios">
+                <div class="beneficio">
+                    <form action="">
+                        <h3 class="titulo-seccion">Ingrese texto Aquí</h3>
+                        <label for="input-texto"></label>
+                        <textarea id="input-texto" name="input-texto" cols="40" rows="10" required></textarea>
+                        <h6 class="copiar">Solo letras minusculas y sin acento</h6>
+                        <div class="botones">
+                            <input class="btnE" type="button" value="encriptar" id="btn-encriptar">
+                            <input class="btnD" type="button" value="desencriptar" id="btn-desencriptar">
+                        </div>
+                    </form>
+                </div>
+                <div class="beneficio" id="ocultarimagen">
+                    <form action="">
+                        <img class="mostrar-texto-acopiar" src="./imagenes/lupa_2.png" alt="en espera de texto">
+                        <div class="mensaje">
+                            <p class="copiar2">Ningun Mensaje fue encontrado</p>
+                            <p class="copiar2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="beneficio2" id="mostrarMensaje">
+                        <form action="">
+                            <div class="botonesCopiar" id="mostrarEncriptado">
+                                <h3 class="titulo-seccion">Mensaje encriptado:</h3>
+                                <textarea class="text-input-salida" id="texto" cols="40" rows="5"></textarea>
+                                <button onclick="copiarAlPortapapeles();">Copiar</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <hr/>
+        </div>
+        <div class="redes-sociales">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="contenedor">
+            <p class="copiar2">&copy Programa Encriptador Realizado por: Jose A. Salcedo T. - 2023</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/e333f068d2.js" crossorigin="anonymous"></script>
+</body>
+</html>
