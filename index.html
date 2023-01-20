@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <style>
-        #mostrarMensaje{
+        #copiar-texto{
             display: none;
         }
     </style>
-    <title>Encriptador V0.1.0</title>
+    <title>Encriptador V0.1.1</title>
 </head>
 <body>
     <header>
         <nav class="menu-navegacion contenedor">
             <div class="logo">
-                <img src="./imagenes/logo_alura.png" alt="">
+                <img src="./imagenes/logo.png" alt="Logo de Alura">
             </div>
         </nav>
     </header>
@@ -25,9 +25,8 @@
             <div class="beneficios">
                 <div class="beneficio">
                     <form action="">
-                        <h3 class="titulo-seccion">Ingrese texto Aquí</h3>
                         <label for="input-texto"></label>
-                        <textarea id="input-texto" name="input-texto" cols="40" rows="10" required></textarea>
+                        <textarea id="input-texto" name="input-texto" cols="40" rows="10" required placeholder="Ingrese texto Aquí"></textarea>
                         <h6 class="copiar">&#65281 Solo letras minusculas y sin acento</h6>
                         <div class="botones">
                             <input class="btnE" type="button" value="encriptar" id="btn-encriptar">
@@ -35,21 +34,15 @@
                         </div>
                     </form>
                 </div>
-                <div class="beneficio" id="ocultarimagen">
-                    <form action="">
-                        <img class="mostrar-texto-acopiar" src="./imagenes/lupa_2.png" alt="en espera de texto">
-                        <div class="mensaje">
-                            <p class="copiar2">Ningun Mensaje fue encontrado</p>
-                            <p class="copiar2">Ingresa el texto que deseas encriptar o desencriptar</p>
-                        </div>
-                    </form>
-                </div>
                 <div class="beneficio2" id="mostrarMensaje">
                         <form action="">
                             <div class="botonesCopiar" id="mostrarEncriptado">
-                                <h3 class="titulo-seccion">Mensaje encriptado:</h3>
-                                <textarea class="text-input-salida" id="texto" cols="40" rows="5"></textarea>
-                                <button onclick="copiarAlPortapapeles();">Copiar</button>
+                                <textarea class="text-input-salida" id="texto" cols="30" rows="14"></textarea>
+                                <button id = "copiar-texto" onclick="copiarAlPortapapeles();">Copiar</button>
+                                <div id="encontrado" class="mensaje">
+                                    <h2 class="copiar2">Ningun Mensaje fue encontrado</h2>
+                                    <p class="copiar2">Ingresa el texto que deseas encriptar o desencriptar</p>
+                                </div>
                             </div>
                         </form>
                 </div>
